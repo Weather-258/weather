@@ -1,0 +1,151 @@
+body {
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.Section_top {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(img3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+
+}
+
+@keyframes change {
+    0% {
+        background-image: url(img6.jpg);
+    }
+
+    20% {
+        background-image: url(img2.jpg);
+    }
+
+    40% {
+        background-image: url(img3.jpeg);
+    }
+
+    60% {
+        background-image: url(img6.jpg);
+    }
+
+    80% {
+        background-image: url(img5.jpg);
+    }
+
+    90% {
+        background-image: url(img7.jpg);
+    }
+
+    100% {
+        background-image: url(img8.jpg);
+    }
+}
+
+#weather-container {
+    background: rgba(96, 76, 76, 0.3);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: "center";
+
+}
+
+h2,
+label,
+p {
+    color: #f4eeee;
+    margin: 8px 0;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgb(104, 34, 34);
+    margin-top: 20px;
+}
+
+button {
+    background: #954bca;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #6f667b;
+}
+
+#temp-div p {
+    font-size: 80px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: rgb(255, 252, 252);
+}
+
+.hourly-item img {
+    width: 80px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #fec7c7;
+    margin-top: 30px;
+}
